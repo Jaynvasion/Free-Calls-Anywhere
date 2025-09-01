@@ -49,7 +49,7 @@ The script runs `npm install`, starts the server (background), then starts the t
 4. Click **Join**.  
    You’ll see your names under **Participants**, and the **timer** will start.
 
-   Make sure you open the LOCALHOST FIRST BUT JUDT OPEN IT AND LEAVE IT THERE. OPEN THE CLOUDFLARE LINK TO TALK TO FRIENDS BUT LOCALHOST IS BASICALLY THE CONNECTION ONE AND THE OTHER IS WHAT YOU SEND TO FRIENDS..... THANK YOU!
+   Make sure you open the LOCALHOST FIRST BUT JUST OPEN IT AND LEAVE IT THERE. OPEN THE CLOUDFLARE LINK TO TALK TO FRIENDS BUT LOCALHOST IS BASICALLY THE CONNECTION ONE AND THE OTHER IS WHAT YOU SEND TO FRIENDS AND YOU USE ASWELL TO TALK TO THEM..... THANK YOU!
 
 **Pro tip:** To prefill the room for someone, add `?room=YOUR_ID` to the end of the link.
 
