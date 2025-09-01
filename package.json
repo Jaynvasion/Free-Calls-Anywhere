@@ -1,0 +1,16 @@
+{
+  "name": "the-dark-plan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal WebRTC audio calls via Socket.IO signaling (Cloudflare Tunnel ready).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5",
+    "uuid": "^9.0.1"
+  }
+}

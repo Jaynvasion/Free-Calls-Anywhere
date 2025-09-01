@@ -1,0 +1,32 @@
+*{box-sizing:border-box}
+:root{
+  --bg:#0b1220; --card:#0f172a; --card2:#111a2b; --stroke:#1f2a44; --fg:#e5e7eb; --muted:#94a3b8;
+  --acc:#22c55e; --acc-2:#06b6d4; --danger:#ef4444; --warn:#f59e0b;
+  --radius:16px; --pad:18px; --shadow:0 10px 30px rgba(0,0,0,.25);
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial;
+}
+html,body{height:100%}
+body{margin:0;background:linear-gradient(180deg,#0b1220,#0b1220 60%,#0c1528);color:var(--fg);font:16px/1.4 var(--font);}
+.wrap{max-width:980px;margin:0 auto;padding:24px}
+.header{display:flex;flex-direction:column;gap:6px;margin:8px 0 18px}
+.header h1{margin:0;font-weight:800;letter-spacing:.2px}
+.tagline{color:var(--muted)}
+.card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--stroke);border-radius:var(--radius);padding:var(--pad);box-shadow:var(--shadow);margin:18px 0}
+.card h2{margin:0 0 12px;font-size:18px;letter-spacing:.3px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:4px 0 8px}
+label{display:flex;flex-direction:column;gap:6px}
+input{background:#0b1327;border:1px solid var(--stroke);border-radius:12px;padding:12px;color:var(--fg);outline:none}
+input:focus{border-color:#3b82f6;box-shadow:0 0 0 3px rgba(59,130,246,.25)}
+.buttons{display:flex;gap:10px;margin-top:8px;flex-wrap:wrap}
+button{appearance:none;border:none;border-radius:12px;padding:12px 16px;background:#1b2642;color:#e8eef9;cursor:pointer;transition:transform .04s ease, filter .2s ease;border:1px solid var(--stroke)}
+button:hover{filter:brightness(1.1)}
+button:active{transform:translateY(1px)}
+button.accent{background:linear-gradient(180deg,#17445c,#0a3a50);border-color:#205b79}
+button.danger{background:linear-gradient(180deg,#5c1720,#4a0a10);border-color:#7a2030}
+button[disabled]{opacity:.5;cursor:not-allowed}
+.status{display:flex;gap:20px;align-items:center;margin-top:10px;color:var(--muted)}
+.peers{list-style:none;margin:0;padding:0;display:flex;gap:10px;flex-wrap:wrap}
+.peers li{background:#0b1327;border:1px solid var(--stroke);border-radius:12px;padding:8px 10px;color:#c9e5ff}
+.log{background:#0b1327;border:1px solid var(--stroke);border-radius:12px;padding:10px;min-height:100px;max-height:240px;overflow:auto;color:#cbd5e1}
+code.inline{background:#0b1327;border:1px solid var(--stroke);padding:2px 6px;border-radius:8px}
+.footer{margin:26px 0;color:var(--muted);font-size:14px}

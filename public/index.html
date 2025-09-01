@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>THE DARK PLAN</title>
+  <meta name="color-scheme" content="dark light">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1>🖤 THE DARK PLAN</h1>
+      <div class="tagline">Minimal private audio calls. Just join a room.</div>
+    </header>
+
+    <section class="card">
+      <div class="grid">
+        <label>
+          <span>Meeting ID</span>
+          <input id="roomId" placeholder="e.g. dark-001"/>
+        </label>
+        <label>
+          <span>Your name</span>
+          <input id="displayName" placeholder="e.g. J"/>
+        </label>
+      </div>
+      <div class="buttons">
+        <button id="joinBtn" class="accent">Join</button>
+        <button id="leaveBtn" class="danger" disabled>End</button>
+      </div>
+      <div class="status">
+        <div><strong>Status:</strong> <span id="status">Idle</span></div>
+        <div><strong>Timer:</strong> <span id="timer">00:00</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Participants</h2>
+      <ul id="peers" class="peers"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Activity</h2>
+      <pre id="log" class="log"></pre>
+    </section>
+
+    <footer class="footer">
+      <div>WebRTC audio is encrypted in transit. For strict networks, add a TURN server in <code>.env</code>.</div>
+    </footer>
+  </div>
+
+  <div id="audioMount"></div>
+
+  <!-- Socket.IO client (served by server) -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
